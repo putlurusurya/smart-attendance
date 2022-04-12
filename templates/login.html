@@ -38,25 +38,22 @@
         -ms-transform: scale(0.95);
         transform: scale(0.95);
         }
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
+html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+body {
+  display:flex;
+}
+form {
+  margin:auto;/* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
 }
     </style>
 </head>
 <body>
 	<h1 style="text-align:center">Smart Attendance System</h1>
-<div class="wrapper fadeInDown">
-  <div id="formContent">
+  <div id="formContent" align="center'>
     <form action="/login"   method="POST">
         <div class="form-group">
             <label for="login" class="form-label mt-4">Email address</label>
@@ -66,7 +63,6 @@ div {
             <input type="submit" value="Log In" >
         </div>
     </form>
-   </div>
-</div>
+  </div>
 </body>
 </html>

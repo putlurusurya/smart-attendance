@@ -48,7 +48,7 @@ def welcome():
       for i in acc:
         accs.append(acc[i])
       data=[]
-      for i in range(0,min(len(dates),min(len(tags),min(len(accs),len(temps)))):
+      for i in range(0,min(len(dates),min(len(tags),min(len(accs),len(temps))))):
         t=[]
         t.append(tags[i])
         t.append(temps[i])
